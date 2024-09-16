@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PET SHOP</title>
+</head>
+<body>
+    <h1>Cadastro do Pet</h1>
+    <form action="recebeDados.java" method="post">
+        <p>Nome do Pet: </p> <input type="text" placeholder="Digite o nome do seu pet:" name="nome"><br>
+        <p>nome do dono: </p> <input type="text" placeholder="Digite seu nome" name="nome"><br>
+        <p>Especie: </p> <input type="text" placeholder="Digite a especie do seu animal:" name="nome"><br>
+        <p>Raça: </p> <input type="text" placeholder="Digite a raça do seu animal:" name="nome"><br>
+        <p>Data de nascimento do animal:</p> 
+        <input type="date" name="dataNascimento" id="">
+
+        <p>Email:</p> <input type="email" name="email" id="">
+
+        <p>senha:</p><input type="password" name="senha" id="">
+
+        <p>digite a senha novamente:</p><input type="password" name="senha" id="">
+
+       <p>Insira uma foto do seu pet:</p><input type="file" name="arquivo" id="">
+
+       <p>Veterinario Regente:</p>
+       <input type="radio" name="veterinario01" id="">Dr. Clodoaldo Augusto <br>
+       <input type="radio" name="veterinario02" id="">Dr. Willian Malvezzi <br>
+       <input type="radio" name="veterinario03" id="">Dr. Santana <br>
+
+       <p>Estado</p>
+        <select name="Estado">
+            <option value="MG">MG</option>
+            <option value="DF">DF</option>
+            <option value="GO">GO</option>
+        </select><br>
+
+
+       <p>Procedimentos:</p>
+        <input type="checkbox" name="lista[]" value="java"> Banho e tosa <br>
+         
+        <input type="checkbox" name="lista[]" value="php">Vacinação e medicação <br>
+
+        <input type="checkbox" name="lista[]" value="sql">Cirurgias e procedimentos <br>
+
+
+        Observação: <textarea name="obs" cols="30" rows="10"></textarea>
+
+
+
+
+        <input type="submit" value="cadastrar">
+
+
+    </form>
+</body>
+</html>
